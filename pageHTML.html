@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HTML and CSS</title>
+  <link href="./resources/index.css" type="text/css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <a href="./index.html"><h1>Web Development Cheat Sheet</h1></a>
+    <nav>
+        <ul>
+            <a href="./pageHTML.html"><li>HTML</li></a>
+            <a href="./pageCSS.html"><li>CSS</li></a>
+        </ul>
+    </nav>
+  </header>
+
+  <main class="HTMLMain">
+    <header class="HTMLHeader">
+        <h2>
+            &lt;HTML&gt;
+        </h2>
+    </header>
+
+    <nav>
+        <h4>Navigation</h4><br>
+        <uo>
+            <a href="#HTMLIntroduction"><li>Introduction To Elements</li></a>
+            <a href="#ChildAndParent"><li>Child And Parent Structure</li></a>
+            <a href="#DocumentStructure"><li>Document Structure</li></a>
+            <a href="#Divisions"><li>Divisions</li></a>
+            <a href="#SemanticElements"><li>Semantic Elements</li></a>
+            <a href="#TextManipulation"><li>Text Manipulation</li></a>
+        </uo>
+    </nav>
+
+    <section class="HTMLArticles">
+        <article class = "HTMLIntroduction" class="white" id="HTMLIntroduction">
+            <section class="Article_Text">
+                <h3>Introduction to Elements</h3>
+                <p>
+                    HTML (Hyper Text Markup Language) is the standard markup language used to create the stucture and content of a webpage.
+                    <br>
+                    HTML is made up of elements, which include tags, attributes and content. These elements are understood by a web browser to create a webpage.
+                    <br>
+                    <br>
+                    Below are some of the more common tags used within HTML.<br><br>
+
+                    <strong>&lt;p&gt;</strong> - Paragraph, used to surround text.<br>
+                    <strong>&lt;img&gt;,</strong> - Image, to add an image to HTML.<br>
+                    <strong>&lt;video&gt;</strong> - To add a video to HTML.<br>
+                    <strong>&lt;div&gt;</strong> - Division, to divide elements into groups which can be styled together from CSS.<br>
+                    <br>
+                    Most tags require a closing tag, indicating the end of the content contained within the tag.<br>
+                    <span id="BoldRed">&lt;p&gt;</span>This text is inbetween a opening and closing p tag.<span id="BoldRed">&lt;/p&gt;<br></span>
+                    <br>
+                    However, some tags are self closing, such as the image and video tags.<br>
+                    The below is an example of an image tag, which as you can see closes itself after the required attributes have been entered.<br>
+                    <span id="BoldRed">&lt;img</span> src="URL source of the image" alt="Text to be displayed if image isn't available. <span id="BoldRed">/&gt;</span>
+                    
+                </p>
+            </section>
+            <section class = "Article_Images">
+                <img src="./resources/images/html-elements-diagram.jpg" alt="HTML Element"/>
+            <section class = "Article_Images">
+        </article>
+
+        <article class="HTMLStructure" id = "ChildAndParent">
+            <section class="Article_Text">
+                <h3>Child And Parent Structure</h3>
+                <p>
+                    HTML is structured with child and parent elements.<br>
+                    The image displayed shows some child and parent elements, structured in HTML.<br>
+                    Child elements inherit settings from parents, such as CSS styling.<br><br>
+
+                    HTML elements are added to the webpage in the order they are placed within the HTML file.<br>
+                    In the image to the right, 'Hello World' will display first, followed by 'This paragraph is a child of the body element.'
+                </p>
+            </section>
+            <section class = "Article_Images">
+                <img src="./resources/images/Structure.JPG" alt="HTML Structure">
+            </section>
+        </article>
+
+        <article class="HTMLStructure2" id="DocumentStructure">
+            <section class="Article_Text" >
+                <h3>Document Structure</h3>
+                <p>The first line of an HTML document is &lt;!DOCTYPE html&gt;, which tells the browser that the document is HTML. <br><br>
+                    An HTML document is made up of a &lt;head&gt; and &lt;body&gt; section.<br><br>
+                    The head section of the HTML page contains meta data and settings. Anything which is not displayed on the webpage itself.<br>
+                    The &lt;title&gt; for example, is stored within the head section. This tells the browser what to display within the tab holding the webpage. The title of this webpage is HTML and CSS. <br>
+
+                    The body section of the HTML document includes anything which is to be displayed to the user. The section you are reading now is part of the body of this webpage.                
+                </p>
+            </section>
+            <section class = "Article_Images">
+                <img src="./resources/images/htmlStructure.png" alt="HTML Structure"/>
+            </section>
+        </article>
+
+        <article class="Divisions" id="Divisions">
+            <section class = "Article_Text">
+                <h3>Divisions</h3>
+                <p>
+                    The &lt;Div&gt; tag is used to divide different sections of the HTML. The ID element of the &lt;Div&gt; tag is used to give an identifier to the section. <br>
+                    The &lt;Div&gt; tag should only be used for styling purposes. Structuring a website should instead be achieved using semantic elements.
+                </p>
+            </section>
+            <section class = "Article_Images">
+                <img src="./resources/images/Div.JPG" alt="Divison Tags"/>
+            </section>
+        </article>
+
+        <article class="SemanticElements" id = "SemanticElements">
+            <section class ="Article_Text">
+                <h3>Semantic Elements</h3>
+                <p>
+                    Semantic Elements allow for structuring of a webpage, and allow for search engines (and other tools) to more accurately determine the components of a webpage. <br>
+                    Some semantic elements have existed in HTML since HTML's inception, however the introduction of HTML 5 in 2008 included the majority of the semantic tags now in use.<br><br>
+                    Before HTML 5, many developers relied on the use of Div tags to define the components of a webpage. <br>
+                    This leads to difficulties for search engines, web scrapers, and other tools to determine a websits contents as the ID of a div tag is defined by the developer.<br><br>
+                    Some of the primary semantic elements used today are listed below.
+                </p>
+                <ul>
+                    <li><strong>&lt;header&gt;</strong> element represents a container for introductory content or a set of navigation elements. Not to be confused with the &lt;head&gt; element, used to a webpages meta deta.</li>
+                    <li><strong>&lt;nav&gt;</strong> is used to define a block used for navigation, such as menus or a table of contents.</li>
+                    <li><strong>&lt;main&gt;</strong> is used to hold the primary contents of a webpage.</li>
+                    <li><strong>&lt;footer&gt;</strong> is used to hold the contents at the bottom of a webpage, such as contact information, copyright information, terms of use, etc.</li>
+                    <li><strong>&lt;section&gt;</strong> defines elements in a document, such as chapters, headings or any other areas of the document with the same theme. A websites homepage could be split into sections for the introduction, news items and contact information for example.</li>
+                    <li><strong>&lt;article&gt;</strong> holds content which makes sense on its own, such as articles, blogs, comments.</li>
+                </ul>
+                <p>
+                    Using HTML structure, these semantic elements can be parents for other semantic elements.<br>
+                    All articles of a certain type may exist within a section. (Parent section, child article)<br>
+                    Articles may be made of sections, such as introduction, chapters, contact information (Parent article, child section).
+                </p>
+            </section>
+            <section class = "Article_Images">
+                <img src="./resources/images/HTML5_logo.png"/>
+            </section>
+        </article>
+
+        <article class="TextManipulation" id = "TextManipulation">
+            <section class = "Article_Text">
+                <h3>Text Manipulation</h3>
+                <p>HTML includes some basic tags to change the way which text appears.<br>
+                    Note that the resulting text displayed to the webpage can be altered using CSS, including the behaviour of these tags.<br>
+                    <br>
+                    6 different headings can be used in HTML, &lt;h1&gt; through to &lt;h6&gt;.<br>
+                    By default, h1 is the largest heading and h6 is the smallest.<br>
+                    <br>
+                    <strong>The &lt;strong&gt; tag can be used to make text bold.<br></strong>
+                    <em>The &lt;em&gt; tag can be used to emphasise text, usually in italics.</em><br>
+                    <br>
+                    Lists can be created in HTML, using &lt;ul&gt; or &lt;ol&gt;. Each item on the list is contained in &lt;li&gt; tags.<br>
+                    &lt;ul&gt; can be used to create an unordered list (bulleted)<br>
+                    <ul>
+                        <li>Example</li>
+                        <li>Of</li>
+                        <li>Unordered</li>
+                        <li>List</li>
+                    </ul> <br>
+                    &lt;ol&gt; can be used to create an ordered list (numbered)
+                    <ol>
+                        <li>Example</li>
+                        <li>Of</li>
+                        <li>Ordered</li>
+                        <li>list</li>
+                    </ol>
+            </section>
+            <section class = "Article_Images">
+                <img src="./resources/images/h1toh6example.png" alt="Example of h1 to h6 tags"/>
+                <img src="./resources/images/listexample.JPG" alt="Example of lists in HTML"/>
+            </section>
+        </article>
+
+        <article class = "Images" id="Images">
+            <section class = "Article_Text">
+                <h3>Images</h3>
+                <p>
+                    Images are added to an HTML page using the &lt;img&gt; tag.<br>
+                    Images are not technically inserted into a web page, but linked. The &lt;img&gt; tag creates a holding space for the referenced image. <br>
+                    The &lt;img&gt; tag includes two required attributes.
+                </p>
+                <br>
+                <uo>
+                    <li>src - Specifies the path of the image.</li>
+                    <li>alt - Specifies the alternate text of the image.</li>
+                </uo>
+                <br>
+                <p>
+                    The src attribute includes a URL path to an image. Images stored internally or externally can be linked.<br>
+                    The alternate text is used if the image can't be found, if the image can't be displayed for some other reason, or if the user has a screen reader.<br> 
+                <br>
+                    The size of an image can be set by using the width and height attributes, or by using the style attribute.<br>
+                    &lt;img src="Image URL" alt="Alternate Text" <span id="BoldRed">width="128" height="128"</span>&gt;<br>
+                    &lt;img src="Image URL" alt="Alterate Text" <span id="BoldRed">style="width:128px;height:128px"</span>&gt;<br>
+                    Note that often, the size of an image is controlled by CSS.
+                </p>
+            </section>
+            <section class = "Article_Images">
+                <img src="./resources/images/tree.jfif" alt="Tree">
+                <img src="./resources/images/imagedoesntexist.jpg" alt="This is an example alt in use, as this image doesn't exist."/>
+            </section>
+        </article>
+
+        <article class = "Videos" id="Videos">
+            <section class="Article_Text">
+                <h3>Videos</h3>
+            </section>
+            <section class="Article_Images">
+
+            </section>
+        </article>
+
+    </section>
+
+  </main>
+  <footer>
+  </footer>
+</body>
+</html>
